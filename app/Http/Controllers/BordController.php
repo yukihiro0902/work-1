@@ -11,7 +11,7 @@ class BordController extends Controller
     {
         $bords = Bord::all();
 
-        return view('bord.index', compact ('bords') );
+        return view('bord.index', compact('bords') );
     }
 
     public function create()
@@ -25,6 +25,39 @@ class BordController extends Controller
             'title' => $req->title,
             'contents' => $req->contents,
         ]);
+        return redirect('/dashboard');
+    }
+
+    public function dashbord()
+    {
+        $bords = Bord::all();
+
+        return view('dashboard', compact('bords') );
+    }
+
+    public function edit($id)
+    {
+        $bord = Bord::find($id);
+
+        return view('bord.edit', compact('bord'));
+    }
+
+    public function update(Request $req)
+    {
+        $bord = Bord::find($req->id);
+
+        $bord->title = $req->title;
+        $bord->contents = $req->contents;
+        $bord->save();
+
+        return redirect('/dashboard');
+    }
+
+    public function delete($id)
+    {
+        $bord = Bord::find($id);
+        $bord->delete();
+
         return redirect('/dashboard');
     }
 }

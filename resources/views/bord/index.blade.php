@@ -27,8 +27,17 @@
         </div>
     </div>
 
-    <div class="container">
-        <table class="list_table">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">番号</th>
+            <th scope="col">タイトル</th>
+            <th scope="col">内容</th>
+            <th scope="col">投稿日</th>
+            <th scope="col">更新日</th>
+        </tr>
+        </thead>
+        <tbody>
             @foreach ($bords as $bord)
             <tr>
                 <td>{{ $bord->id }}</td>
@@ -38,6 +47,6 @@
                 <td>{{ $bord->updated_at }}</td>
             </tr>
             @endforeach
-        </table>
-    </div>
+        </tbody>
+    </table>
 </x-guest-layout>
