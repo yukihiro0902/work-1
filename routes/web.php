@@ -8,6 +8,7 @@ Route::post('/create', [App\Http\Controllers\BordController::class, 'insert'])->
 Route::get('/edit/{id}', [App\Http\Controllers\BordController::class, 'edit'])->name('bord.edit');
 Route::put('/update', [App\Http\Controllers\BordController::class, 'update'])->name('bord.update');
 Route::get('/delete/{id}', [App\Http\Controllers\BordController::class, 'delete'])->name('bord.delete');
+Route::get('/keyword', [App\Http\Controllers\BordController::class, 'keyword'])->name('bord.keyword');
 
 Route::middleware([
     'auth:sanctum',

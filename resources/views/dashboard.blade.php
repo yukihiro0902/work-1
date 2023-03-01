@@ -13,6 +13,19 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <form action="{{ route('bord.keyword') }}" method="get">
+                    @csrf
+                    <label for="inputPassword5" class="form-label">検索</label>
+                    <input type="text" id="inputPassword5" class="form-control" name="keyword">
+                    <input type="submit" class="btn btn-primary" value="検索">
+                </form>
+            </div>
+        </div>
+    </div>
+
     <table class="table">
         <thead>
         <tr>

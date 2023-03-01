@@ -60,4 +60,17 @@ class BordController extends Controller
 
         return redirect('/dashboard');
     }
+
+    public function keyword(Request $req)
+    {
+        $keyword = $req->input('keyword');
+        $query = Bord::query();
+
+        if(!empty($keyword)) {
+            $query->orWhere('title', 'LIKE', "%{$keyword}%")
+            ->orWhere('contents', 'LIKE', "%{$keyword}%");
+        }
+        $bords = $query->orderBy('created_at', 'asc')->get();
+        return view('dashboard', compact('bords'));
+    }
 }
