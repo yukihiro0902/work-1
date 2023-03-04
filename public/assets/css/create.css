@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.post_box {
+    font-size: clamp(1rem, 0.671rem + 1.51vw, 1.8rem);
+    padding-top: clamp(0rem, -1.235rem + 5.65vw, 3rem);
+    padding-left: 7rem;
+}
+
+.post_name {
+    height: clamp(2rem, 1.176rem + 3.76vw, 4rem);
+    margin-bottom: clamp(1rem, 0.588rem + 1.88vw, 2rem);
+}
+
+.post_content {
+    height: clamp(7rem, 1.647rem + 24.47vw, 20rem);
+    margin-bottom: clamp(1rem, 0.588rem + 1.88vw, 2rem);
+}
+
+.post_upload {
+    margin-top: clamp(1rem, 0.588rem + 1.88vw, 2rem);
+}

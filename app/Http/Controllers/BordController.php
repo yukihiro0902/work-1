@@ -24,6 +24,7 @@ class BordController extends Controller
         Bord::create([
             'title' => $req->title,
             'contents' => $req->contents,
+            'image' => $req->image
         ]);
         return redirect('/dashboard');
     }

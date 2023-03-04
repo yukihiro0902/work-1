@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+a {
+    color : inherit;
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(214, 194, 14);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav{
+    height: 8rem;
+    line-height: 8rem;
+    font-size: clamp(1rem, 0.753rem + 1.13vw, 1.6rem);
+}
+
+header p{
+    line-height: 8rem;
+    font-size: clamp(1.5rem, 0.965rem + 2.45vw, 2.8rem);
+    font-family: 'Corben', cursive;
+    font-weight: 800;
+}
+
+.nav_list {
+    text-align: center;
+}
+
+.nav_list a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.nav_list a:hover {
+    color: #f5402f;
+}
+
+.bg_img {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../imgs/top_img.jpg");
+    background-size: cover;
+    position: relative;
+    padding-bottom: clamp(6rem, 3.529rem + 11.29vw, 12rem);
+    margin-top: 8rem;
+}
+
+.bg_img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg_img .container {
+    width: 100%;
+    padding-top: 10%;
+    color: white;
+}
+
+.top_sub_title {
+    font-size: clamp(1.5rem, 0.471rem + 4.71vw, 4rem);
+    z-index: 2;
+    font-weight: 400;
+}
+
+.top_title {
+    font-weight: bold;
+    z-index: 2;
+    font-size: clamp(3rem, 1.353rem + 7.53vw, 7rem);
+}
+
+.top_text {
+    font-size: clamp(1rem, 0.176rem + 3.76vw, 3rem);
+    z-index: 2;
+    font-weight: 550;
+}
+
+span {
+    color: rgb(255, 247, 9);
+}
+
+.contact_form {
+    z-index: 2;
+}
+
+.contact_form a {
+    position: relative;
+    display: inline-block;
+    max-width: 240px;
+    padding: 1.5rem 5rem;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #f5402f;
+    border-radius: 8px;
+    border-bottom: solid 5px #9e2902;
+    font-size: clamp(1rem, 0.876rem + 0.56vw, 1.3rem);
+}
+.contact_form a:hover {
+    border-bottom: solid 0.2px #de241d;
+    transform: translateY(3px);
+    color: #676767;
+}
+
+.info {
+    height: 180rem;
+    height: 100%;
+    padding: clamp(3rem, 2.176rem + 3.76vw, 5rem) 0;
+}
+
+.info .row {
+    margin-bottom: clamp(2rem, -1.294rem + 15.06vw, 10rem);
+    justify-content: center;
+}
+
+.info_title {
+    text-align: center;
+    padding-top: clamp(2rem, 1.588rem + 1.88vw, 3rem);
+    padding-bottom: clamp(3rem, 2.176rem + 3.76vw, 5rem);
+}
+
+.info h2 {
+    font-size: clamp(1.5rem, 1.088rem + 1.88vw, 2.5rem);
+    font-weight: bold;
+}
+
+.info_text  {
+    font-size: clamp(1rem, 0.588rem + 1.88vw, 2rem);
+    line-height: clamp(2.5rem, 1.471rem + 4.71vw, 5rem);
+}
+
+.img-responsive {
+    border-radius: 50%;
+    margin: 0 auto;
+    height: clamp(15rem, 8.824rem + 28.24vw, 30rem);
+    width: clamp(16rem, 9.412rem + 30.12vw, 32rem);
+}
+
+.contents_bgc {
+    background-color: rgb(234, 205, 180);
+}
+
+.contents {
+    height: 100%;
+    padding-top: 5rem;
+}
+
+.contents h2 {
+    text-align: center;
+    font-size: clamp(2rem, 0.765rem + 5.65vw, 5rem);
+    font-weight: 600;
+    padding-bottom: clamp(3rem, 2.176rem + 3.76vw, 5rem);
+}
+
+.contents .row {
+    margin: 0 auto;
+}
+
+.contents_box {
+    justify-content: space-around;
+}
+
+.card {
+    height: 100%;
+    margin-bottom: clamp(0rem, -4.941rem + 22.59vw, 12rem);
+    display: inline-block;
+}
+
+.card-img-top {
+    height: clamp(12rem, 3.353rem + 39.53vw, 33rem);
+    padding-top: clamp(0.7rem, 0.576rem + 0.56vw, 1rem);
+}
+
+.card-body {
+    height: clamp(20rem, 15.882rem + 18.82vw, 30rem);
+}
+
+.card-title {
+    font-size: clamp(1.5rem, 0.882rem + 2.82vw, 3rem);
+    margin: clamp(1rem, 0.588rem + 1.88vw, 2rem) 0;
+}
+
+.card-text {
+    height: clamp(10rem, 7.941rem + 9.41vw, 15rem);
+    font-size: clamp(1rem, 0.712rem + 1.32vw, 1.7rem);
+    margin-top: 1rem;
+    padding-bottom: clamp(0.2rem, 0.076rem + 0.56vw, 0.5rem);
+}
+
+.card-body a {
+    padding: clamp(0.5rem, 0.294rem + 0.94vw, 1rem) clamp(2rem, 1.588rem + 1.88vw, 3rem);
+    background-color: rgb(214, 194, 14);
+    border: rgb(214, 194, 14);
+    color: #676767;
+}
+
+.about {
+    height: 5rem;
+    line-height: 5rem;
+    padding-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.about img {
+    border-radius: 50%;
+    height: clamp(6rem, 3.529rem + 11.29vw, 12rem);
+    width: clamp(6rem, 3.529rem + 11.29vw, 12rem);
+    margin: 0 auto;
+}
+
+.about_article {
+    text-align: center;
+    height: 50%;
+    padding-top: 2rem;
+}
+
+.about_article p {
+    font-size: clamp(1rem, 0.794rem + 0.94vw, 1.5rem);
+    line-height: 1.5rem;
+}
+
+.about h3 {
+    font-size: clamp(1.5rem, 1.294rem + 0.94vw, 2rem);
+}
+
+.about_text {
+    height: 50%;
+    font-size: clamp(1rem, 0.794rem + 0.94vw, 1.5rem);
+}

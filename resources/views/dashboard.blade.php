@@ -1,30 +1,43 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <a href="{{ route( 'bord.create' ) }}">投稿</a>
+    <section class="contents_bgc">
+        <div class="container contents">
+            <h2>投稿一覧</h2>
+            <div class="row col-11 contents_box">
+                <div class="card col-9 col-md-5">
+                    <img src="../../imgs/content_img.jpg" class="card-img-top content_img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">味噌煮込みうどん</h5>
+                        <p class="card-text">正しい方法で行ったダイエットは必ず成功します。そしてその頃にはきっとあなたも過去の自分と同じように悩んでいる人を見て、アドバイスをしてあげたくなることでしょう。</p>
+                        <a href="{{ route( 'bord.create' ) }}" class="btn btn-primary">コメントを書く</a>
+                    </div>
+                </div>
+                <div class="card col-9 col-md-5">
+                    <img src="../../imgs/content_img2.jpg" class="card-img-top content_img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">味噌煮込みうどん</h5>
+                        <p class="card-text">正しい方法で行ったダイエットは必ず成功します。そしてその頃にはきっとあなたも過去の自分と同じように悩んでいる人を見て、アドバイスをしてあげたくなることでしょう。</p>
+                        <a href="{{ route( 'bord.create' ) }}" class="btn btn-primary">コメントを書く</a>
+                    </div>
+                </div>
+                <div class="card col-9 col-md-5">
+                    <img src="../../imgs/content_img3.jpg" class="card-img-top content_img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">味噌煮込みうどん</h5>
+                        <p class="card-text">正しい方法で行ったダイエットは必ず成功します。そしてその頃にはきっとあなたも過去の自分と同じように悩んでいる人を見て、アドバイスをしてあげたくなることでしょう。</p>
+                        <a href="{{ route( 'bord.create' ) }}" class="btn btn-primary">コメントを書く</a>
+                    </div>
+                </div>
+                <div class="card col-9 col-md-5">
+                    <img src="../../imgs/content_img4.jpg" class="card-img-top content_img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">味噌煮込みうどん</h5>
+                        <p class="card-text">正しい方法で行ったダイエットは必ず成功します。そしてその頃にはきっとあなたも過去の自分と同じように悩んでいる人を見て、アドバイスをしてあげたくなることでしょう。</p>
+                        <a href="{{ route( 'bord.create' ) }}" class="btn btn-primary">コメントを書く</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-6">
-                <form action="{{ route('bord.keyword') }}" method="get">
-                    @csrf
-                    <label for="inputPassword5" class="form-label">検索</label>
-                    <input type="text" id="inputPassword5" class="form-control" name="keyword">
-                    <input type="submit" class="btn btn-primary" value="検索">
-                </form>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <table class="table">
         <thead>

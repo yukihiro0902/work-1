@@ -17,6 +17,7 @@ class CreateBordsTable extends Migration
             $table->id();
             $table->string('title', 100);
             $table->string('contents', 100);
+            $table->string('image');
             $table->timestamps();
         });
     }

@@ -9,10 +9,13 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        <link href="https://fonts.googleapis.com/css?family=Corben:700" rel="stylesheet">
 
         <!-- Styles -->
         @livewireStyles
+        <link rel="stylesheet" href="{{ asset('/assets/css/dashboard.css') }}">
         <link rel="stylesheet" href="{{ asset('/assets/css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('/assets/css/create.css') }}">
         <script src="{{ asset('/assets/js/app.js') }}"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- Scripts -->
@@ -21,8 +24,22 @@
     <body class="font-sans antialiased">
         <x-jet-banner />
 
-        <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-menu')
+        <div class="min-h-screen command_head">
+            <div class="container">
+                <div class="row command">
+                    <div class="col-5"><p>Mite.Meal</p></div>
+                    <div class="col-2 command_link">
+                        <a href="{{ route( 'bord.create' ) }}">写真を投稿する</a>
+                    </div>
+                    <form action="{{ route('bord.keyword') }}" method="get" class="col-2 command_search">
+                        @csrf
+                        <label for="inputPassword5" class="form-label"></label>
+                        <input type="text" id="inputPassword5" class="form-control" name="keyword">
+                        <input type="submit" class="btn btn-primary" value="検索">
+                    </form>
+                    <div class="col-2 command_select">@livewire('navigation-menu')</div>
+                </div>
+            </div>
 
             <!-- Page Heading -->
             @if (isset($header))
