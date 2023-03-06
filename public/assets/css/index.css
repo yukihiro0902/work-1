@@ -214,10 +214,15 @@ span {
 }
 
 .about {
-    height: 5rem;
-    line-height: 5rem;
-    padding-top: 5rem;
-    margin-bottom: 10rem;
+    height: 100%;
+    padding-top: clamp(2rem, 0.765rem + 5.65vw, 5rem);
+    margin-bottom: clamp(2rem, 1.176rem + 3.76vw, 4rem);
+}
+
+.about .row {
+    width: clamp(NaNrem, -49.412rem + 225.88vw, 120rem);
+    margin: 0 0 0 auto;
+    align-items: center;
 }
 
 .about img {
@@ -244,5 +249,25 @@ span {
 
 .about_text {
     height: 50%;
+    text-align: left;
+    line-height: clamp(1rem, 0.588rem + 1.88vw, 2rem);
     font-size: clamp(1rem, 0.794rem + 0.94vw, 1.5rem);
+    padding-top: 1.5rem;
+}
+
+footer .row {
+    height: clamp(3rem, 1.765rem + 5.65vw, 6rem);
+}
+
+footer .row{
+    height: 6rem;
+    align-items: center;
+}
+.footer_logo {
+    font-family: 'Corben', cursive;
+    font-size: clamp(1.5rem, 1.294rem + 0.94vw, 2rem);
+}
+
+.copy_text {
+    font-size: clamp(0rem, -0.412rem + 1.88vw, 1rem);
 }

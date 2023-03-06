@@ -117,10 +117,9 @@
         </div>
     </section>
 
-
     <div class="container about">
         <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-2">
                 <img src="../../imgs/about_img.jpg" alt="">
             </div>
             <div class="col-12 col-md-2 about_article">
@@ -132,35 +131,21 @@
                 </div>
             </div>
             <div class="col-12 col-md-7 px-5 about_text">
-                <p>愛媛県松山市出身の29歳。</p>
+                <p>愛媛県出身の29歳。20歳で名古屋に引っ越して訪問営業を経験し新人賞を取った経験があります。
+                <br>また2年ほどフィットネスジムでのトレーナー経験もありますので、対面でのコミュニケーションには自信があります。
+                <br>昔から頭で考えた事を形にしたり、作品を作り上げることが好きです。
+                <br>持ち前の明るさを活かしながら頑張ります。</p>
             </div>
         </div>
     </div>
 
     <footer>
-        
+        <div class="container">
+            <hr>
+            <div class="row">
+                <p class="col-7 col-sm-10 footer_logo">Mite.Meal</p>
+                <p class="col-5 col-sm-2 copy_text">© minami. 2023 portfolio.</p>
+            </div>
+        </div>
     </footer>
-
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">番号</th>
-            <th scope="col">タイトル</th>
-            <th scope="col">内容</th>
-            <th scope="col">投稿日</th>
-            <th scope="col">更新日</th>
-        </tr>
-        </thead>
-        <tbody>
-            @foreach ($bords as $bord)
-            <tr>
-                <td>{{ $bord->id }}</td>
-                <td>{{ $bord->title }}</td>
-                <td>{{ $bord->contents }}</td>
-                <td>{{ $bord->created_at }}</td>
-                <td>{{ $bord->updated_at }}</td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
 </x-guest-layout>

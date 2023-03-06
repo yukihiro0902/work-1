@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBordsTable extends Migration
+class AddCommentToBordsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateBordsTable extends Migration
      */
     public function up()
     {
-        Schema::create('bords', function (Blueprint $table) {
-            $table->id();
-            $table->string('title', 100);
-            $table->string('contents', 100);
-            $table->timestamps();
+        Schema::table('bords', function (Blueprint $table) {
+            $table->string('comment', 255)->nullable()->after('image');
         });
     }
 
@@ -28,6 +25,8 @@ class CreateBordsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bords');
+        Schema::table('bords', function (Blueprint $table) {
+            $table->dropColumn('comment');
+        });
     }
 }

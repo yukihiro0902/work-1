@@ -2,8 +2,14 @@
 
 .post_box {
     font-size: clamp(1rem, 0.671rem + 1.51vw, 1.8rem);
-    padding-top: clamp(0rem, -1.235rem + 5.65vw, 3rem);
-    padding-left: 7rem;
+    padding-top: clamp(0rem, -2.882rem + 13.18vw, 7rem);
+}
+
+.post_box form {
+    width: clamp(30rem, 17.647rem + 56.47vw, 60rem);
+    display: block;
+    margin: auto;
+    text-align: center;
 }
 
 .post_name {
@@ -17,5 +23,26 @@
 }
 
 .post_upload {
-    margin-top: clamp(1rem, 0.588rem + 1.88vw, 2rem);
+    text-align: center;
+    margin: 3rem auto;
+    position: relative;
+    display: block;
+    max-width: 240px;
+    padding: 1.5rem 5rem;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #f5402f;
+    border-radius: 8px;
+    border-bottom: solid 5px #9e2902;
+    font-size: clamp(1rem, 0.876rem + 0.56vw, 1.3rem);
+}
+.post_upload:hover {
+    border-bottom: solid 0.2px #de241d;
+    transform: translateY(3px);
+    color: #676767;
+}
+
+.post_box input[type="text"]{
+    font-size: 100%;
 }

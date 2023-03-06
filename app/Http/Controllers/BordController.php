@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Bord;
+use App\Models\Comment;
 use Illuminate\Http\Request;
 
 class BordController extends Controller
@@ -21,11 +22,24 @@ class BordController extends Controller
 
     public function insert(Request $req)
     {
+        $bords = Bord::latest()->first();
+        $bords_id = $bords->id;
+
+        // $original = $req->file('image')->storeAs('avatars', '1');
+        // $req->file('image')->storeAs('avatars', '2');
+        $file_name = $req->file('image')->getClientOriginalName();
+        $req->file('image')->storeAs('public/' , $file_name);
+
         Bord::create([
             'title' => $req->title,
             'contents' => $req->contents,
-            'image' => $req->image
+            'image' => $file_name
+
         ]);
+
+        // Storage::makeDirectory('public/upload/bord/'. $bords_id);
+        $req->file('image')->store('imgs', 'public');
+
         return redirect('/dashboard');
     }
 
@@ -73,5 +87,29 @@ class BordController extends Controller
         }
         $bords = $query->orderBy('created_at', 'asc')->get();
         return view('dashboard', compact('bords'));
+    }
+
+    public function comment()
+    {
+        $comments = Comment::all();
+
+        return view('bord.comment', compact('comments') );
+    }
+
+    public function comment_ins(Request $req)
+    {
+        Comment::create([
+            'bord_id' => $req->id,
+            'comment' => $req->comment,
+        ]);
+
+        return redirect('/dashboard');
+    }
+
+    public function writein(Request $req)
+    {
+        $bord = Bord::find($req->id);
+
+        return view('bord.writein', compact('bord') );
     }
 }

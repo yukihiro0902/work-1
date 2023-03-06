@@ -18,9 +18,6 @@ a {
     background-color: rgb(214, 194, 14);
 }
 
-.command_head .container {
-}
-
 .command {
     justify-content: space-between;
     height: 8rem;
@@ -44,6 +41,7 @@ a {
     font-size: clamp(0.5rem, 0.088rem + 1.88vw, 1.5rem);
     text-decoration: none;
     color: rgb(150, 9, 9);
+    height: 8rem;
 }
 
 .command_search {
@@ -64,9 +62,9 @@ a {
 }
 
 .command_select {
-    align-items: center;
     padding: 1.8rem 0;
     color: #676767;
+
 }
 
 .contents_bgc {
@@ -109,7 +107,7 @@ a {
 }
 
 .card-title {
-    font-size: clamp(1.5rem, 0.882rem + 2.82vw, 3rem);
+    font-size: clamp(1.2rem, 0.871rem + 1.51vw, 2rem);
     margin: clamp(1rem, 0.588rem + 1.88vw, 2rem) 0;
 }
 
@@ -120,9 +118,38 @@ a {
     padding-bottom: clamp(0.2rem, 0.076rem + 0.56vw, 0.5rem);
 }
 
-.card-body a {
-    padding: clamp(0.5rem, 0.294rem + 0.94vw, 1rem) clamp(2rem, 1.588rem + 1.88vw, 3rem);
+.edit_btn a {
+    height: clamp(2rem, 1.176rem + 3.76vw, 4rem);
+    line-height: clamp(2rem, 1.176rem + 3.76vw, 4rem);
+    width: 30%;
     background-color: rgb(214, 194, 14);
     border: rgb(214, 194, 14);
     color: #676767;
+    font-weight: 600;
+    font-size: clamp(0.7rem, 0.494rem + 0.94vw, 1.2rem);
+    padding-bottom: clamp(2rem, 1.176rem + 3.76vw, 4rem);
+}
+.btn_edit {
+    margin-left: clamp(0.5rem, 0.294rem + 0.94vw, 1rem);
+}
+
+.btn_delete {
+    margin-left: clamp(0.5rem, 0.294rem + 0.94vw, 1rem);
+}
+
+footer .row {
+    height: clamp(3rem, 1.765rem + 5.65vw, 6rem);
+}
+
+footer .row{
+    height: 6rem;
+    align-items: center;
+}
+.footer_logo {
+    font-family: 'Corben', cursive;
+    font-size: clamp(1.5rem, 1.294rem + 0.94vw, 2rem);
+}
+
+.copy_text {
+    font-size: clamp(0rem, -0.412rem + 1.88vw, 1rem);
 }

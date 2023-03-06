@@ -80,6 +80,18 @@
                                 {{ __('Manage Account') }}
                             </div>
 
+                            <x-jet-dropdown-link href="{{ route('dashboard') }}">
+                                {{ __('投稿一覧') }}
+                            </x-jet-dropdown-link>
+
+                            <x-jet-dropdown-link href="{{ route('bord.create') }}">
+                                {{ __('投稿する') }}
+                            </x-jet-dropdown-link>
+
+                            <x-jet-dropdown-link href="{{ route('bord.comment') }}">
+                                {{ __('コメント一覧') }}
+                            </x-jet-dropdown-link>
+
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
                             </x-jet-dropdown-link>
@@ -158,7 +170,7 @@
                     @csrf
 
                     <x-jet-responsive-nav-link href="{{ route('logout') }}"
-                                   @click.prevent="$root.submit();">
+                        @click.prevent="$root.submit();">
                         {{ __('Log Out') }}
                     </x-jet-responsive-nav-link>
                 </form>

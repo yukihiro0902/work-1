@@ -9,6 +9,9 @@ Route::get('/edit/{id}', [App\Http\Controllers\BordController::class, 'edit'])->
 Route::put('/update', [App\Http\Controllers\BordController::class, 'update'])->name('bord.update');
 Route::get('/delete/{id}', [App\Http\Controllers\BordController::class, 'delete'])->name('bord.delete');
 Route::get('/keyword', [App\Http\Controllers\BordController::class, 'keyword'])->name('bord.keyword');
+Route::get('/comment', [App\Http\Controllers\BordController::class, 'comment'])->name('bord.comment');
+Route::post('/comment', [App\Http\Controllers\BordController::class, 'comment_ins'])->name('bord.comment_ins');
+Route::get('/writein/{id}', [App\Http\Controllers\BordController::class, 'writein'])->name('bord.writein');
 
 Route::middleware([
     'auth:sanctum',

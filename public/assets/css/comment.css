@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.comment_page .row {
+
+}
+
+.comment_box {
+    margin: auto;
+    width: 80rem;
+
+}
+
+.comment_box h2 {
+    width: 100%;
+    text-align: center;
+    margin: 5rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.comment {
+    background-color: aliceblue;
+    height: 100%;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    border: solid 0.1rem black;
+    margin-bottom: 2rem;
+}

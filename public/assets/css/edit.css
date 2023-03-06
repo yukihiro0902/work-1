@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.edit_content {
+    height: clamp(10rem, 5.882rem + 18.82vw, 20rem);
+    margin-bottom: clamp(1rem, 0.794rem + 0.94vw, 1.5rem);
+}
+
+.edit_name {
+    margin-bottom: clamp(1rem, 0.794rem + 0.94vw, 1.5rem);
+}
+
+

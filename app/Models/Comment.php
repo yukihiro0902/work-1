@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Bord extends Model
+class Comment extends Model
 {
     use HasFactory;
-    protected $fillable = ['title', 'contents', 'image'];
+    protected $fillable = ['bord_id', 'comment'];
 }

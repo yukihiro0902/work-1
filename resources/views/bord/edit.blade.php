@@ -1,24 +1,18 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <form action="{{ route('bord.update') }}" method="post">
-                    @method("PUT")
-                    @csrf
-                    <input type="hidden" name="id" value="{{ $bord->id }}">
-                    <label for="">title</label>
-                    <input type="text" name="title" value="{{ $bord->title }}">
-                    <label for="">contents</label>
-                    <input type="text" name="contents" value="{{ $bord->contents }}">
-                    <input type="submit">
-                </form>
-            </div>
+    <div class="container py-12">
+        <div class="row col-12 post_box">
+            <form action="{{ route('bord.update') }}" method="post" enctype="multipart/form-data">
+                @method('PUT')
+                @csrf
+                <input type="hidden" name="id" value="{{ $bord->id }}">
+                <label for="food_name" class="col-12 col-sm-2 edit_name"><p>料理名</p></label>
+                <input type="text" name="title" value="{{ $bord->title }}" class="col-9">
+                <label for="content" class="col-8 col-sm-2"><p>内容</p></label>
+                <input type="text" name="contents" value="{{ $bord->contents }}" class="col-9 edit_content">
+                <label for="image" class="col-8 col-sm-2"><p>画像</p></label>
+                <input id="image" type="file" name="image" class="col-9 .post_image">
+                <input type="submit" value="更新" class="col-10 post_upload">
+            </form>
         </div>
     </div>
 </x-app-layout>
