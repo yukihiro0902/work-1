@@ -23,12 +23,6 @@
         </div>
     </header>
 
-    {{-- <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot> --}}
-
     <section class="top_wrapper">
         <div class="container px-5">
             <div class="row">
@@ -81,34 +75,34 @@
             <h2>投稿一覧</h2>
             <div class="row col-11">
                 <div class="card col-9 col-md-5">
-                    <img src="../../imgs/content_img.jpg" class="content_img">
-                    <div class="content_body">
-                        <h5 class="content_title">鮭のレモンバター蒸し</h5>
-                        <p class="content_text"></p>
-                        <a href="{{ route('login') }}" class="btn btn-primary">コメントを書く</a>
-                    </div>
-                </div>
-                <div class="card col-9 col-md-5">
-                    <img src="../../imgs/content_img2.jpg" class="content_img">
-                    <div class="content_body">
-                        <h5 class="content_title">味噌煮込みうどん</h5>
-                        <p class="content_text">正しい方法で行ったダイエットは必ず成功します。そしてその頃にはきっとあなたも過去の自分と同じように悩んでいる人を見て、アドバイスをしてあげたくなることでしょう。</p>
-                        <a href="{{ route('login') }}" class="btn btn-primary">コメントを書く</a>
-                    </div>
-                </div>
-                <div class="card col-9 col-md-5">
                     <img src="../../imgs/content_img3.jpg" class="content_img">
                     <div class="content_body">
-                        <h5 class="content_title">味噌煮込みうどん</h5>
-                        <p class="content_text">正しい方法で行ったダイエットは必ず成功します。そしてその頃にはきっとあなたも過去の自分と同じように悩んでいる人を見て、アドバイスをしてあげたくなることでしょう。</p>
+                        <h5 class="content_title">炊き込みご飯</h5>
+                        <p class="content_text">炊き込みご飯作りました</p>
                         <a href="{{ route('login') }}" class="btn btn-primary">コメントを書く</a>
                     </div>
                 </div>
                 <div class="card col-9 col-md-5">
-                    <img src="../../imgs/content_img4.jpg" class="content_img">
+                    <img src="../../storage/post_img.jpg" class="content_img">
                     <div class="content_body">
-                        <h5 class="content_title">味噌煮込みうどん</h5>
-                        <p class="content_text">正しい方法で行ったダイエットは必ず成功します。そしてその頃にはきっとあなたも過去の自分と同じように悩んでいる人を見て、アドバイスをしてあげたくなることでしょう。</p>
+                        <h5 class="content_title">ダイエット一日目〜</h5>
+                        <p class="content_text">タンパク質を意識して摂ってます。</p>
+                        <a href="{{ route('login') }}" class="btn btn-primary">コメントを書く</a>
+                    </div>
+                </div>
+                <div class="card col-9 col-md-5">
+                    <img src="../../storage/post_img2.jpg" class="content_img">
+                    <div class="content_body">
+                        <h5 class="content_title">オムレツ（朝食）</h5>
+                        <p class="content_text">オムレツの中にキャベツ入れてます。<br>タンパク質は卵とブロッコリーで摂ってます。</p>
+                        <a href="{{ route('login') }}" class="btn btn-primary">コメントを書く</a>
+                    </div>
+                </div>
+                <div class="card col-9 col-md-5">
+                    <img src="../../storage/post_img3.jpg" class="content_img">
+                    <div class="content_body">
+                        <h5 class="content_title">食べ過ぎでしょうか？</h5>
+                        <p class="content_text">漬けマグロの山かけ丼は、刻んだ白滝入りのカサ増し<br>ご飯ローカロリー<br>コンニャクのピリ辛炒め<br>野菜入りヘルシーワンタン</p>
                         <a href="{{ route('login') }}" class="btn btn-primary">コメントを書く</a>
                     </div>
                 </div>

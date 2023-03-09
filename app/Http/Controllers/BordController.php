@@ -25,8 +25,6 @@ class BordController extends Controller
         $bords = Bord::latest()->first();
         $bords_id = $bords->id;
 
-        // $original = $req->file('image')->storeAs('avatars', '1');
-        // $req->file('image')->storeAs('avatars', '2');
         $file_name = $req->file('image')->getClientOriginalName();
         $req->file('image')->storeAs('public/' , $file_name);
 

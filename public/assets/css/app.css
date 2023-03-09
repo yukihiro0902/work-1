@@ -64,19 +64,16 @@ body {
     line-height: 8rem;
     font-size: clamp(1.5rem, 0.965rem + 2.45vw, 2.8rem);
     font-family: 'Corben', cursive;
-    /* font-weight: 800; */
 }
 
 .command_search {
     display: flex;
     height: 3rem;
-    /* margin-top: 2rem; */
     align-items: center;
     padding: 3.8rem 0;
 }
 
 .command_search .btn-primary {
-    /* display: block; */
     margin-left: 1rem;
 }
 

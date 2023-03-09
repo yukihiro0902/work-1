@@ -15,7 +15,6 @@
 }
 
 input {
-    width: 100%;
     box-sizing: border-box;
     word-break:break-word;
 }
@@ -31,10 +30,7 @@ input {
 }
 
 .post_upload {
-    /* text-align: center; */
     margin: 3rem auto;
-    /* position: relative; */
-    /* display: block; */
     max-width: 240px;
     padding: 1.5rem 5rem;
     color: #FFF;

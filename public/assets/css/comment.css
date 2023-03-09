@@ -4,7 +4,6 @@
 
 .comment_box {
     margin: auto;
-    /* width: 80rem; */
 }
 
 .comment_box h2 {
@@ -17,7 +16,6 @@
 
 .comment_box p {
     background-color: aliceblue;
-    /* height: 100%; */
     font-size: 2rem;
     border-radius: 0.5rem;
     border: solid 0.1rem black;

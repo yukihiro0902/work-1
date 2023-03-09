@@ -5,7 +5,7 @@
                 @csrf
                 <input type="hidden" name="id" value="{{ $bord->id }}">
                 <label for="content" class="col-7"><p>コメント</p></label>
-                <input id="content" type="text" name="comment" value="" class="col-9 col-sm-6 writein_content">
+                <input id="content" type="text" name="comment" class="col-9 col-sm-6 writein_content">
                 <input type="submit" value="コメントを送信" class="col-7 writein_upload">
             </form>
         </div>
