@@ -1,15 +1,15 @@
 <x-app-layout>
-    <section class="contents_bgc">
+    <section class="contents_wrapper">
         <div class="container contents">
             <h2>投稿一覧</h2>
-            <div class="row col-11 contents_box">
+            <div class="row col-11">
                 @foreach ($bords as $bord)
                     <div class="card col-9 col-md-5">
-                        <img src="{{ asset('storage/' . $bord->image) }}" class="card-img-top content_img" alt="...">
+                        <img src="{{ asset('storage/' . $bord->image) }}" class="content_img">
                         <div class="card-body">
                             <h5 class="card-title">{{ $bord->title }}</h5>
                             <p class="card-text">{{ $bord->contents}}</p>
-                            <div class="row col-12 edit_btn">
+                            <div class="row col-12 btn_nav">
                                 <a href="/writein/{{ $bord->id }}" class="col-3 btn btn_coment">コメント</a>
                                 <a href="/edit/{{ $bord->id }}" class="col-3 btn btn_edit">編集</a>
                                 <a href="/delete/{{ $bord->id }}" class="col-3 btn  btn_delete ">削除</a>

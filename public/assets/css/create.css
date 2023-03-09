@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/* create.blade */
+
 .post_box {
     font-size: clamp(1rem, 0.671rem + 1.51vw, 1.8rem);
     padding-top: clamp(0rem, -2.882rem + 13.18vw, 7rem);
@@ -10,6 +12,12 @@
     display: block;
     margin: auto;
     text-align: center;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    word-break:break-word;
 }
 
 .post_name {
@@ -23,10 +31,10 @@
 }
 
 .post_upload {
-    text-align: center;
+    /* text-align: center; */
     margin: 3rem auto;
-    position: relative;
-    display: block;
+    /* position: relative; */
+    /* display: block; */
     max-width: 240px;
     padding: 1.5rem 5rem;
     color: #FFF;
