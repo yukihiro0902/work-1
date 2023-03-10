@@ -32,12 +32,10 @@ class BordController extends Controller
             'title' => $req->title,
             'contents' => $req->contents,
             'image' => $file_name
-
         ]);
 
-        // Storage::makeDirectory('public/upload/bord/'. $bords_id);
         $req->file('image')->store('imgs', 'public');
-
+        
         return redirect('/dashboard');
     }
 

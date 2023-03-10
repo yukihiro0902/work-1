@@ -7,16 +7,14 @@
                 </div>
                 <div class="col-4 nav_list">
                     @if (Route::has('login'))
-                        {{-- <div class=""> --}}
-                            @auth
-                                <a href="{{ url('/dashboard') }}">Dashboard</a>
-                            @else
-                                <a href="{{ route('login') }}">ログイン</a>
-                                @if (Route::has('register'))
-                                    <a href="{{ route('register') }}" class="ml-6">会員登録</a>
-                                @endif
-                            @endauth
-                        {{-- </div> --}}
+                        @auth
+                            <a href="{{ url('/dashboard') }}">Dashboard</a>
+                        @else
+                            <a href="{{ route('login') }}">ログイン</a>
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}" class="ml-6">会員登録</a>
+                            @endif
+                        @endauth
                     @endif
                 </div>
             </div>
