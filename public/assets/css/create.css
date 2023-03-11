@@ -4,7 +4,7 @@
 
 .post_box {
     font-size: clamp(1rem, 0.671rem + 1.51vw, 1.8rem);
-    padding-top: clamp(0rem, -2.882rem + 13.18vw, 7rem);
+    padding-top: 13rem;
 }
 
 .post_box form {

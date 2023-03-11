@@ -3,8 +3,8 @@
 /* writein_box */
 
 .writein_box {
-    padding-top: clamp(2rem, -1.294rem + 15.06vw, 10rem);
     text-align: center;
+    padding-top: 13rem;
 }
 
 .writein_box input[type="text"] {

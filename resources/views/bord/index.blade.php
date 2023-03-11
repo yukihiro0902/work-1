@@ -2,10 +2,10 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-7 col-sm-8">
                     <p>Mite.Meal</p>
                 </div>
-                <div class="col-4 nav_list">
+                <div class="col-5 col-sm-4 nav_list">
                     @if (Route::has('login'))
                         @auth
                             <a href="{{ url('/dashboard') }}">Dashboard</a>

@@ -147,14 +147,27 @@
                     </div>
                 @endif
 
-                <div>
+
+
+                {{-- <div>
                     <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
                     <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
-                </div>
+                </div> --}}
             </div>
 
             <div class="mt-3 space-y-1">
                 <!-- Account Management -->
+                <x-jet-responsive-nav-link href="{{ route('dashboard') }}">
+                    {{ __('投稿一覧') }}
+                </x-jet-responsive-nav-link>
+
+                <x-jet-responsive-nav-link href="{{ route('bord.create') }}">
+                    {{ __('投稿する') }}
+                </x-jet-responsive-nav-link>
+
+                <x-jet-responsive-nav-link href="{{ route('bord.comment') }}">
+                    {{ __('コメント一覧') }}
+                </x-jet-responsive-nav-link>
                 <x-jet-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
                     {{ __('Profile') }}
                 </x-jet-responsive-nav-link>

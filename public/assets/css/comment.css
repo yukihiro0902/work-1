@@ -4,19 +4,20 @@
 
 .comment_box {
     margin: auto;
+    padding-top: 13rem;
 }
 
 .comment_box h2 {
     width: 100%;
     text-align: center;
     margin: 5rem 0;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 0.882rem + 2.82vw, 3rem);
     font-weight: 600;
 }
 
 .comment_box p {
     background-color: aliceblue;
-    font-size: 2rem;
+    font-size: clamp(1rem, 0.588rem + 1.88vw, 2rem);
     border-radius: 0.5rem;
     border: solid 0.1rem black;
     margin-bottom: 2rem;

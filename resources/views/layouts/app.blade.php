@@ -28,16 +28,18 @@
         <x-jet-banner />
 
         <div class="min-h-screen command_head">
-            <div class="container">
-                <div class="row command">
-                    <div class="col-6 col-sm-7"><p>Mite.Meal</p></div>
-                    <form action="{{ route('bord.keyword') }}" method="get" class="col-4 col-sm-2 command_search">
-                        @csrf
-                        <label for="inputPassword5" class="form-label"></label>
-                        <input type="text" id="inputPassword5" class="form-control" name="keyword">
-                        <input type="submit" class="btn btn-primary" value="検索">
-                    </form>
-                    <div class="col-2 col-sm-2 command_select">@livewire('navigation-menu')</div>
+            <div class="command_header">
+                <div class="container">
+                    <div class="row command">
+                        <div class="col-6 col-sm-7"><p>Mite.Meal</p></div>
+                        <form action="{{ route('bord.keyword') }}" method="get" class="col-4 col-sm-2 command_search">
+                            @csrf
+                            <label for="inputPassword5" class="form-label"></label>
+                            <input type="text" id="inputPassword5" class="form-control" name="keyword">
+                            <input type="submit" class="btn btn-primary" value="検索">
+                        </form>
+                        <div class="col-12 col-sm-2 command_select">@livewire('navigation-menu')</div>
+                    </div>
                 </div>
             </div>
 

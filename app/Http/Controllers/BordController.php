@@ -35,7 +35,7 @@ class BordController extends Controller
         ]);
 
         $req->file('image')->store('imgs', 'public');
-        
+
         return redirect('/dashboard');
     }
 
