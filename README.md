@@ -17,7 +17,7 @@
 ![image](storage/captcha/captcha_16.png)
 ![image](storage/captcha/captcha_17.png)
 ![image](storage/captcha/captcha_18.png)
-#
+# レスポンシブ
 ![image](storage/captcha/captcha_19.png)
 ![image](storage/captcha/captcha_20.png)
 ![image](storage/captcha/captcha_21.png)
